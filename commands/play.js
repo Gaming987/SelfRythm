@@ -55,7 +55,7 @@ module.exports.run = async (client, message, args) => {
 
         if (voiceChannel != null) { 
 
-            message.channel.send(strings.startedPlaying.replace("SONG_TITLE", song.title).replace("url", song.url));
+            
             
             const connection = utils.joinVChannel(voiceChannel);
 
