@@ -46,7 +46,7 @@ module.exports.run = async (client, message, args) => {
         });
     } else {
 
-        if(args[0] > 10) return message.channel.send(strings.volumeToHigh);
+        if(args[0] > 1000) return message.channel.send(strings.volumeToHigh);
         if(!message.member.voice.channel) return message.channel.send(strings.notInVocal);
         message.channel.send(strings.volumeChanged.replace("VOLUME", args[0]));
     
